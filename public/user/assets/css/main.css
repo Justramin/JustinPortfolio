@@ -750,7 +750,8 @@ html.lenis {
   }
 }
 .main-menu ul li a::before {
-  content: "\F282";
+  
+  display: none;/* content: "\F282";
   font-family: "bootstrap-icons";
   font-weight: 700;
   position: absolute;
@@ -762,7 +763,7 @@ html.lenis {
   -moz-transition: all 0.3s ease 0s;
   -ms-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s; */
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .main-menu ul li a::before {

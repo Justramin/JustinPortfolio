@@ -9,22 +9,28 @@
             <div class="col-lg-6 offset-lg-6">
                 <div class="main-form ms-xl-5">
                     <form method="post" action="/contactPost" class="ps-xl-4">
+                        <!-- Name Field -->
                         <label>Name</label>
-                        <input type="text" name="name" placeholder="Enter your first name">
-                        
+                        <input type="text" name="name" placeholder="Enter your first name" required>
+                    
+                        <!-- Email Field -->
                         <label>Email</label>
-                        <input type="text" name="email" placeholder="Enter your e-mail">
-                        
+                        <input type="email" name="email" placeholder="Enter your e-mail" required>
+                    
+                        <!-- Interest Field -->
                         <label>I’m Interested In</label>
-                        <input type="text" name="interest" placeholder="Enter your interest">
-                        
+                        <input type="text" name="interest" placeholder="Enter your interest" required>
+                    
+                        <!-- Message Field -->
                         <label>Message</label>
-                        <textarea name="message" cols="30" rows="10" placeholder="Write your message"></textarea>
-                        
+                        <textarea name="message" cols="30" rows="10" placeholder="Write your message" required></textarea>
+                    
+                        <!-- Submit Button -->
                         <button class="ht-btn-four" type="submit">
                             <i class="bi bi-send"></i> Send Now
                         </button>
                     </form>
+                    
                     
                 </div>
             </div>

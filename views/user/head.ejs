@@ -8,7 +8,7 @@
 		content="agency, photography, business, company, consulting, corporate, creative, designer, digital marketing, elementor, industry, portfolio, studio, web design">
 	<meta name="description"
 		content="Justin - Personal Portfolio  ">
-	<title>Justin</title>
+	<title>Justin Portfolio</title>
 	<meta property="og:site_name" content="Logistics">
 	<meta property="og:url" content="">
 	<meta property="og:type" content="website">
@@ -44,6 +44,78 @@
 	<link rel="stylesheet" href="user/assets/css/main.css" />
 </head>
 
+<style>
+	/* Ensure the right-nav container aligns items properly */
+	.right-nav {
+		display: flex;
+		align-items: center;
+		gap: 20px; /* Adds space between the color-mode and the button */
+	}
+	
+	/* Style for the color-mode toggle */
+	.color-mode {
+		display: flex;
+		align-items: center;
+	}
+	
+	.checkbox {
+		opacity: 0;
+		position: absolute;
+	}
+	
+	.checkbox-label {
+		background-color: #111;
+		width: 50px;
+		height: 26px;
+		border-radius: 50px;
+		position: relative;
+		padding: 5px;
+		cursor: pointer;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	
+	.checkbox-label .bi-moon-fill {
+		color: #f1c40f;
+	}
+	
+	.checkbox-label .bi-sun-fill {
+		color: #f39c12;
+	}
+	
+	.checkbox-label .ball {
+		background-color: #fff;
+		width: 22px;
+		height: 22px;
+		position: absolute;
+		left: 2px;
+		top: 2px;
+		border-radius: 50%;
+		transition: transform 0.2s linear;
+	}
+	
+	.checkbox:checked + .checkbox-label .ball {
+		transform: translateX(24px);
+	}
+	
+	/* Style for the Download CV button */
+	.quote__btn .ht_btn {
+		background-color: #ffffff; /* White background */
+		color: #000; /* Black text color */
+		padding: 10px 20px;
+		border-radius: 5px;
+		text-decoration: none;
+		font-weight: 500;
+		transition: background-color 0.3s ease;
+	}
+	
+	.quote__btn .ht_btn:hover {
+		background-color: #ffffff; /* Keep the background white on hover */
+		color: #000; /* Ensure text remains black on hover */
+	}
+	</style>
+
 <body class="light-bg">
 	<!-- main-page-wrapper start -->
 	<div class="main-page-wrapper">
@@ -53,24 +125,14 @@
 
 
 		<!-- Gearbox content here -->
-		<div class="gear-box">
+		<!-- <div class="gear-box">
 			<div class="icon">
 				<span class="gear-icon"><i class="bi bi-gear"></i></span>
 				<span class="close-icon"><i class="bi bi-x-lg"></i></span>
 			</div>
 			<h5 class="text-white fw-medium">Mode</h5>
-			<div class="color-mode">
-				<input type="checkbox" class="checkbox" id="checkbox">
-				<label for="checkbox" class="checkbox-label">
-					<i class="bi bi-moon-fill"></i>
-					<i class="bi bi-sun-fill"></i>
-					<span class="ball"></span>
-				</label>
-			</div>
-			<!-- <ul class="nav-menu-list">
-				<li><a href="index.html">Home</a></li>
-			</ul> -->
-		</div>
+			
+		</div> -->
 
 
 
@@ -173,6 +235,18 @@
 						</div>
 						<div class="col-xl-2 col-lg-3 col-6">
 							<div class="right-nav d-flex align-items-center justify-content-end">
+
+
+
+								<div class="color-mode">
+									<input type="checkbox" class="checkbox" id="checkbox">
+									<label for="checkbox" class="checkbox-label">
+										<i class="bi bi-moon-fill"></i>
+										<i class="bi bi-sun-fill"></i>
+										<span class="ball"></span>
+									</label>
+								</div>
+							
 								<div class="quote__btn d-none d-sm-inline-block">
 									<a href="user/assets/files/Justin_FullStack_Developer.pdf" class="ht_btn" download="Justin_FullStack_Developer.pdf">Download CV</a>
 								</div>

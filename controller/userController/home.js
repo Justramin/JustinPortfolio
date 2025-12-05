@@ -40,7 +40,7 @@ const contactPost = async (req, res) => {
             service: 'gmail', 
             auth: {
                 user: 'justramin000@gmail.com',
-                pass: 'slbc tvdv upse gayc', 
+                pass: 'nhiu jljc fegz ggnw', 
             },
         });
 
@@ -69,10 +69,10 @@ const contactPost = async (req, res) => {
         console.log('Email sent successfully.');
 
         
-        res.redirect('/');
+        res.redirect('/?success=true');
     } catch (error) {
         console.error('Error in contactPost:', error);
-        res.redirect('/userError');
+        res.redirect('/?error=true');
     }
 };
 
